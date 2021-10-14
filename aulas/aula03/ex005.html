@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 | ex 005</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula02/ex004.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 3</h1>
+        </div>
+        
+        <div>
+            <a href="../aula04/ex006.html">Próximo</a>
+        </div>
+        
+    </header>
+
+
+    <main>
+
+        <div>
+            <p>Teste 1 </p>
+            <p id="p2" >Teste 2 </p>
+            <p class="p3" >Teste 3 </p>
+            <p name="p4" >Aprendendendo a usar o <b>DOM</b></p>
+        </div>
+
+    </main>
+    
+    <script>
+        
+        var corpo = document.body;
+
+        var p1 = document.getElementsByTagName('p')[0];
+        p1.style.color = 'purple'
+        p1.style.fontWeight = 'bold';
+
+        var p2 = document.getElementById('p2');
+        p2.style.color = 'black';
+        p2.style.fontStyle = 'italic';
+
+        var p3 = document.getElementsByClassName('p3')[0];
+        p3.style.color = 'green';
+        p3.style.fontSize = '25px';
+
+        var p4 = document.getElementsByName('p4')[0];
+        p4.style.color = 'orange';
+        p4.style.fontSize = '30px';
+            
+    </script>
+
+
+</body>
+</html>
