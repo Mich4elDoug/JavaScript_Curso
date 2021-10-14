@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 | ex 007</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula04/ex006.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 4</h1>
+        </div>
+        
+        <div>
+            <a href="../aula05/ex010.html">Próximo</a>
+        </div>
+        
+    </header>
+
+
+    <main>
+        
+        <div>
+            <input type="number" placeholder="Número 1" name="txt1" id="txt1"> +
+            <input type="number" placeholder="Número 2" name="txt2" id="txt2">
+            <input type="button" value="somar" onclick="somar();">
+            <div style="margin-top: 15px;" id="res">Resultado: </div>
+        </div>
+
+    </main>
+    
+    <script>
+
+        function somar(){
+            var tn1 = document.getElementById('txt1');
+            var tn2 = document.getElementById('txt2');
+            var res = document.getElementById('res');
+
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+
+            var soma = n1 + n2;
+            
+            res.innerHTML = `A soma entre ${n1} e ${n2} é <b>${soma}</b>`;
+        }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4 | ex 006</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula03/ex005.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 4</h1>
+        </div>
+        
+        <div>
+            <a href="../aula04/ex007.html">Próximo</a>
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="area">  
+            Interaja comigo!
+        </div>
+    </main>
+    
+    <script>
+        var div = document.getElementById("area");
+
+        // Add eventos diretamente pelo JS
+
+        div.addEventListener('click', clicar);
+        div.addEventListener('mouseenter', entrar);
+        div.addEventListener('mouseout', sair);
+
+
+        function clicar(){
+            div.innerText = "Clicou";
+            div.style.background = "#000";
+            div.style.color = "#fff";
+        }
+
+        function entrar(){
+            div.innerText = "Entrou";
+            div.style.background = "green"
+        }
+
+        function sair(){
+            div.innerText = "Saiu";
+            div.style.background = "red"
+        }
+
+    </script>
+    
+</body>
+</html>
