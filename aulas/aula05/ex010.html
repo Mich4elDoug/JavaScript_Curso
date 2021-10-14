@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 | ex 010</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula04/ex007.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 5</h1>
+        </div>
+        
+        <div>
+            <a href="../aula05/ex011.html">Próximo</a>
+        </div>
+        
+    </header>
+
+
+    <main>
+        
+        <div>
+            <h1 style="margin-bottom: 25px;" >Sistema de velocidade - DETRAN</h1>
+
+            Velocidade do carro: <input type="number" name="v1" id="v1"> Km/h
+            <input type="button" value="Verificar" onclick="verificar();">
+
+            <div style="margin-top: 15px;" id="res">Resultado: </div>
+        </div>
+
+    </main>
+    
+    <script>
+
+        function verificar(){
+            var div = document.getElementById("res");
+            var t1 = document.getElementById("v1");
+            var vel = Number(t1.value);
+
+            div.innerHTML = `<p>A velocidade informada foi <b>${vel}km/h</b> </p>`;
+            div.innerHTML += `<p>O limite de velocidade é <b>60km/h</b></p>`;
+
+            if (vel > 60){
+                div.innerHTML += `<p>Você está <b>MULTADO!</b></p>` 
+            }
+            else {
+                div.innerHTML += `<p> <b> Parabéns! </b>Continue respeitando as regras :)</p>`;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

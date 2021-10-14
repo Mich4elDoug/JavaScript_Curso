@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 | ex 011</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula05/ex010.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 5</h1>
+        </div>
+        
+        <div>
+            <a href="#">Próximo</a>
+        </div>
+        
+    </header>
+
+
+    <main>
+        
+        <div>
+            <h1 style="margin-bottom: 25px;" >Verificação de nacionalidade</h1>
+  
+            País de nacimento: <input type="text" name="txt1" id="p1" placeholder="ex: Brasil"> -->
+            <input type="button" value="Verificar" onclick="verificar();">
+        
+            <div style="margin-top: 15px;" id="res">Resultado: </div>
+        </div>
+
+    </main>
+    
+    <script>
+
+        function verificar(){
+            var txt = document.getElementById("p1");
+            country = txt.value;
+            var div = document.getElementById("res");
+
+            div.innerHTML = `País informado: <b>${country}<b>`;
+
+            if (country == "Brasil"){
+                div.innerHTML += `<p> Você é <b>Brasileiro</b>! </p>`;
+            }else{
+                div.innerHTML += `<p> Você é <b>Estrangeiro</b>! </p>`;
+                
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
