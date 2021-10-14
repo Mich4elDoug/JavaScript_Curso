@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 | ex 004</title>
+
+    <link rel="stylesheet" href="../global/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div>
+            <a href="../aula02/ex003.html">Anterior</a>
+        </div>
+
+        <div class="titulo">
+            <h1>Aula 2</h1>
+        </div>
+        
+        <div>
+            <a href="../aula03/ex005.html">Próximo</a>
+        </div>
+        
+    </header>
+
+
+    <main>
+        <div id="txt"> </div>
+    </main>
+
+    <script>
+        
+        let divEl = document.getElementById('txt');
+        let nome = prompt('Digite seu nome: ');
+
+        divEl.innerHTML += (`Olá, <b>${nome}</b>, seu nome tem ${nome.length} letras. <br>`);
+        divEl.innerHTML +=(`Seu nome em maiúsculo é ${nome.toUpperCase()}. <br>`);
+        divEl.innerHTML +=(`Seu nome em minúsculo é ${nome.toLowerCase()}.`);
+
+    </script>
+
+</body>
+</html>
