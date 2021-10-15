@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+
+    <link rel="stylesheet" href="./css/layout_5.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Analisador de numeros</h1>
+    </header>
+
+    <section>
+        
+        <div>
+            
+            <p>Número (entre 1 e 100):  
+                <input type="number" id="numero">
+                <input type="button" value="Adicionar" onclick="adicionar();">
+                <input type="button" value="Finalizar" onclick="resultado();">
+            </p>
+            
+            <select name="tab" id="tabela" size="11" width='300'></select>
+            <br><br>
+            
+
+        </div >
+
+        <div id="resultado">
+
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Michael Douglas Braga </p>
+    </footer>
+
+    <script src="./js/analisador.js"></script>
+
+</body>
+</html>
